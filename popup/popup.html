@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="../manifest.json" style="display:none;" alt=""> <!-- Placeholder for icon if needed -->
+      <h2>YT Downloader</h2>
+    </header>
+    
+    <div class="content">
+      <div id="videoInfo">
+        <p id="videoTitle">Loading video info...</p>
+      </div>
+
+      <div class="options">
+        <p class="section-title">Select Format:</p>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="format" value="mp3" checked>
+            <span class="radio-custom"></span>
+            MP3 (Audio)
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="format" value="mp4">
+            <span class="radio-custom"></span>
+            MP4 (Video)
+          </label>
+        </div>
+      </div>
+
+      <button id="downloadButton">Download Now</button>
+      <p id="status"></p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
